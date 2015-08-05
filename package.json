@@ -1,0 +1,65 @@
+{
+  "name": "project-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A new project starter.",
+  "main": "dist/domo-bits.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base ./ --host 0.0.0.0 --hot --inline --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.empdev.domo.com/Development/domo-bits"
+  },
+  "keywords": [
+    "bits",
+    "angular",
+    "components"
+  ],
+  "author": "nick.randall@domo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://git.empdev.domo.com/Development/domo-bits/issues"
+  },
+  "homepage": "https://git.empdev.domo.com/Development/domo-bits",
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel-core": "^5.5.8",
+    "conventional-changelog": "0.0.17",
+    "css-loader": "^0.14.4",
+    "del": "^1.2.0",
+    "extract-text-webpack-plugin": "^0.8.1",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-filter": "^2.0.2",
+    "gulp-git": "^1.2.4",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tag-version": "^1.2.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "imports-loader": "^0.6.4",
+    "json-loader": "^0.5.2",
+    "map-stream": "0.0.6",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-sass": "^3.1.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^1.0.2",
+    "source-map": "^0.4.2",
+    "style-loader": "^0.12.3",
+    "ts-loader": "^0.5.0",
+    "typescript": "^1.5.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.3.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3"
+  }
+}

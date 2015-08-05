@@ -1,0 +1,6 @@
+// load common styles
+@import "mixins/mixins";
+
+.default-text {
+  @include default-text-color;
+}

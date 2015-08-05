@@ -1,0 +1,5 @@
+@import "variables";
+
+@mixin default-text-color() {
+  color: $text-color;
+}
