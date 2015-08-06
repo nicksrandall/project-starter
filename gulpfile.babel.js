@@ -30,14 +30,14 @@ gulp.task('webpack', cb => {
 
 gulp.task('compress-js', ['clean', 'webpack'], () => {
   return gulp.src('dist/*.js')
-    .pipe($.rename('domo-bits.min.js'))
+    .pipe($.rename('project.min.js'))
     .pipe($.sourcemaps.init())
     .pipe($.uglify())
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('compress-css', ['clean', 'webpack', 'iconbits'], () => {
+gulp.task('compress-css', ['clean', 'webpack'], () => {
   return gulp.src('dist/*.css')
     .pipe($.rename({ suffix: '.min' }))
     .pipe($.sourcemaps.init())
@@ -95,4 +95,4 @@ gulp.task('release:patch', () => inc('patch'));
 gulp.task('release:minor', () => inc('minor'));
 gulp.task('release:major', () => inc('major'));
 
-gulp.task('default', ['clean', 'webpack', 'iconbits', 'compress-js', 'compress-css']);
+gulp.task('default', ['clean', 'webpack', 'compress-js', 'compress-css']);
