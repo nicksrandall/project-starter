@@ -6,7 +6,7 @@
   "main": "dist/domo-bits.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/.bin/webpack-dev-server --content-base ./ --host 0.0.0.0 --hot --inline --colors"
+    "start": "node node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",

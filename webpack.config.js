@@ -87,6 +87,9 @@ module.exports = {
     contentBase: './',
     noInfo: true, //  --no-info option
     hot: true,
-    inline: true
+    inline: true,
+    proxy: {
+      '/api': "https://dev.dev.domo.com"
+    }
   }
 };

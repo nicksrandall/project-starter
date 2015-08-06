@@ -2,7 +2,7 @@ interface FeatureNameScope extends ng.IScope {
   bindMe: string;
 }
 
-module.exports = function (ngModule) {
+export = function (ngModule) {
   ngModule.directive('featureName', function ($timeout:ng.ITimeoutService) {
     return {
       restrict: 'EA',
