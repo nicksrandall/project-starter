@@ -464,6 +464,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 12 */
 /***/ function(module, exports) {
 
+	/// <reference path="../../typings/tsd.d.ts" />
 	var FeatureCtrl = (function () {
 	    function FeatureCtrl() {
 	        this.bindMe = 'Hello World';
@@ -479,6 +480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/// <reference path="../../typings/tsd.d.ts" />
 	module.exports = function (ngModule) {
 	    ngModule.directive('featureName', ["$timeout", function ($timeout) {
 	        return {

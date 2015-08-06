@@ -1,3 +1,5 @@
+/// <reference path="../../typings/tsd.d.ts" />
+
 interface FeatureNameScope extends ng.IScope {
   bindMe: string;
 }

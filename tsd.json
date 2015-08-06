@@ -13,6 +13,15 @@
     },
     "jquery/jquery.d.ts": {
       "commit": "070e3a5e095d2a2f043f999bd9fb36fe9d5f68ab"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "b45569f35d5f27716d21cc2a639c7d8ccb9a0164"
+    },
+    "chai/chai.d.ts": {
+      "commit": "b45569f35d5f27716d21cc2a639c7d8ccb9a0164"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "b45569f35d5f27716d21cc2a639c7d8ccb9a0164"
     }
   }
 }

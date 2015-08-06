@@ -1,9 +1,8 @@
 /// <reference path="lodash/lodash.d.ts" />
 /// <reference path="angularjs/angular.d.ts" />
-
-/**
- * Type declarations for Webpack runtime.
- */
+/// <reference path="mocha/mocha.d.ts" />
+/// <reference path="chai/chai.d.ts" />
+/// <reference path="angularjs/angular-mocks.d.ts" />
 
 interface WebpackRequireEnsureCallback {
     (req: WebpackRequire): void
@@ -16,9 +15,3 @@ interface WebpackRequire {
 }
 
 declare var require: WebpackRequire;
-
-interface NodeModule {
-    exports: any;
-}
-
-declare var module: NodeModule;
