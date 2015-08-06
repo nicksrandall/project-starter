@@ -1,3 +1,17 @@
+<a name"1.0.2"></a>
+### 1.0.2 (2015-08-06)
+
+
+#### Bug Fixes
+
+* **typescript:** adding ngModule type ([a51fd168](https://git.empdev.domo.com/Development/DomoBits/commit/a51fd168))
+
+
+#### Features
+
+* **test:** Adding karma|mocha|chai to tempalte. ([4b1a71d6](https://git.empdev.domo.com/Development/DomoBits/commit/4b1a71d6))
+
+
 <a name"1.0.1"></a>
 ### 1.0.1 (2015-08-06)
 
