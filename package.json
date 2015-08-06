@@ -3,14 +3,14 @@
   "private": true,
   "version": "1.0.1",
   "description": "A new project starter.",
-  "main": "dist/domo-bits.js",
+  "main": "dist/package.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.empdev.domo.com/Development/domo-bits"
+    "url": "https://git.empdev.domo.com/nick-randall/project-starter"
   },
   "keywords": [
     "bits",
@@ -20,9 +20,9 @@
   "author": "nick.randall@domo.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://git.empdev.domo.com/Development/domo-bits/issues"
+    "url": "https://git.empdev.domo.com/nick-randall/project-starter/issues"
   },
-  "homepage": "https://git.empdev.domo.com/Development/domo-bits",
+  "homepage": "https://git.empdev.domo.com/nick-randall/project-starter",
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
     "babel": "^5.8.21",

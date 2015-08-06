@@ -5,6 +5,6 @@ class FeatureCtrl {
   }
 }
 
-export = function (ngModule) {
+export = function (ngModule: ng.IModule) {
   ngModule.controller('FeatureCtrl', FeatureCtrl);
 };
