@@ -1,3 +1,12 @@
+<a name"1.0.4"></a>
+### 1.0.4 (2015-08-07)
+
+
+#### Features
+
+* **linting:** add code linting to project ([bc8750cf](https://git.empdev.domo.com/Development/DomoBits/commit/bc8750cf))
+
+
 <a name"1.0.3"></a>
 ### 1.0.3 (2015-08-07)
 
