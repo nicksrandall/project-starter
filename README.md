@@ -13,9 +13,12 @@ run `$ npm start` to run webpack-dev-server
     + Changelog Generation
     + Minification
     + Git Release Automation
+- [karma](http://karma-runner.github.io/): Test Runner
+    + [mocha](https://mochajs.org/)
+    + [chai](http://chaijs.com/)
 
 ## Future Plans
 - sub-generators
 - configurable proxy
 
-More info coming soon. 
+More info coming soon.
