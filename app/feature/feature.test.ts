@@ -9,7 +9,7 @@ describe('feature', function () {
   it('angular to exist', function () {
     chai.expect(angular).to.exist;
   });
-  
+
   it('should pass this test', function () {
     chai.expect(true).to.be.true;
   });

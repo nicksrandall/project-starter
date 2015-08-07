@@ -413,19 +413,21 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function (angular) {
+	  'use strict';
 	  __webpack_require__(10);
 
 	  var moduleName = 'project.submodule';
 	  var ngModule = angular.module(moduleName, [
 	    // optionally inject dependencies for this feature.
 	  ]);
-	  
+
 	  // load module components
 	  __webpack_require__(12)(ngModule);
 	  __webpack_require__(13)(ngModule);
 
 	  return moduleName;
 	};
+
 
 /***/ },
 /* 10 */

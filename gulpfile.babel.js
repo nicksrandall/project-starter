@@ -10,6 +10,9 @@ import git from 'gulp-git';
 import bump from 'gulp-bump';
 import filter from 'gulp-filter';
 import tagVersion from 'gulp-tag-version';
+import jshint from 'gulp-jshint';
+import tslint from 'gulp-tslint';
+import stylish from 'gulp-tslint-stylish';
 
 import map from 'map-stream';
 import conventionalChangelog from 'conventional-changelog';
@@ -44,6 +47,27 @@ gulp.task('compress-css', ['clean', 'webpack'], () => {
     .pipe($.minifyCss())
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('jshint', () => {
+  gulp.src('app/**/*.js')
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('tslint', () => {
+  gulp.src('app/**/*.ts')
+    .pipe(tslint())
+    .pipe(tslint.report(stylish, {
+      emitError: true,
+      sort: true,
+      bell: false
+    }));
+});
+
+gulp.task('lint', ['jshint', 'tslint']);
+gulp.task('watch', () => {
+  gulp.watch(['app/**/*.js', 'app/**/*.ts'], ['lint']);
 });
 
 function changelog () {
@@ -91,8 +115,8 @@ function inc (importance) {
     .pipe(tagVersion());
 }
 
-gulp.task('release:patch', () => inc('patch'));
-gulp.task('release:minor', () => inc('minor'));
-gulp.task('release:major', () => inc('major'));
+gulp.task('release:patch', ['lint'], () => inc('patch'));
+gulp.task('release:minor', ['lint'], () => inc('minor'));
+gulp.task('release:major', ['lint'], () => inc('major'));
 
 gulp.task('default', ['clean', 'webpack', 'compress-js', 'compress-css']);
